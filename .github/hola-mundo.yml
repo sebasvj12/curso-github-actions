@@ -1,0 +1,22 @@
+name: Curso Aprendiendo GitHub Actions
+run-name: Va a correr el Actions Hola Mundo!!
+on: [push]
+jobs:
+  setup-java:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Setear JDK de Java
+        uses: actions/setup-java@v3.12.0
+        with: 
+          distribution: oracle
+          java-version: 21.0.3
+          java-package: jdk
+  run-java:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Compilar el código en java
+        run: javac main.java
+      - name: Correr el código java
+        run: java main.java
