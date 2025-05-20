@@ -1,5 +1,5 @@
 name: Aprendiendo GitHub Actions
-run-name: Lanzando Workflow Hola Mundo!!
+run-name: Lanzando Workflow Hola Mundo!
 on:
   push:
     branches: aprendiendo-github-actions
