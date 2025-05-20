@@ -1,6 +1,8 @@
 name: Aprendiendo GitHub Actions
 run-name: Lanzando Workflow Hola Mundo!!
-on: [push]
+on:
+  push:
+    branches: aprendiendo-github-actions
 jobs:
     hola-mundo:
       runs-on: ubuntu-latest
