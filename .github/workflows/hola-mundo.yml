@@ -7,7 +7,7 @@ jobs:
       steps:
         - name: Checkout
           uses: actions/Checkout@v3
-        - name: Compilar Clase
-          run: javac main.java
-        - name: Correr Script
-          run: java main
+        - name: Compilar código
+          run: javac HolaMundo.java
+        - name: Ejecutar código
+          run: java HolaMundo
